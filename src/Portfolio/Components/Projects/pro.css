@@ -1,0 +1,118 @@
+.projectPage_main_section {
+  margin: 100px 0px;
+}
+.projectpage_heading {
+  width: 66vw;
+  margin: 0px auto 20px;
+}
+.projectpage_heading h1 {
+  font-size: 35px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  width: 500px;
+}
+.projectPage_main_div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  margin: auto;
+}
+.image_div {
+  margin: 30px;
+  position: relative;
+}
+.image_div img {
+  width: 380px;
+  height: 260px;
+  object-fit: cover;
+  box-shadow: 0px 4px 6px rgba(41, 38, 38, 0.507);
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  margin-bottom: 10px;
+}
+.image_div h1 {
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.image_hover {
+  width: 380px;
+  height: 260px;
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgba(231, 231, 231, 0.466);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.image_hover i {
+  font-size: 4rem;
+}
+.image_div:hover .image_div img {
+  opacity: 0.3;
+}
+
+.image_div:hover .image_hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1050px) {
+  .projectPage_main_div {
+    width: 95%;
+    margin: auto;
+  }
+  .projectpage_heading {
+    width: 90%;
+    margin: 0px auto 50px;
+  }
+  .projectpage_heading h1 {
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .projectPage_main_div {
+    width: 100%;
+  }
+  .projectpage_heading {
+    width: 90%;
+    margin: 0px auto 50px;
+  }
+  .projectpage_heading h1 {
+    font-size: 27px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    width: 100%;
+    text-align: center;
+  }
+  .image_div img {
+    width: 300px;
+    height: 210px;
+    margin-bottom: 10px;
+  }
+  .image_div h1 {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    top: 38%;
+  }
+  .image_hover {
+    width: 300px;
+    height: 210px;
+  }
+  .image_hover i {
+    font-size: 2rem;
+  }
+}

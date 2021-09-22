@@ -1,0 +1,140 @@
+.contect_section {
+  margin: 70px auto;
+  width: 66vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid black; */
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(41, 38, 38, 0.507);
+}
+.contect_section h1 {
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0px 0px 40px;
+}
+.contect_section form {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  padding: 40px;
+}
+.contect_section form input,
+.contect_section form select,
+.contect_section form textarea {
+  font-size: 20px;
+  border: none;
+  border-bottom: 2px solid black;
+  letter-spacing: 1px;
+  /* text-transform: uppercase; */
+  outline: none;
+  margin: 20px;
+  padding: 6px 10px;
+}
+.contect_section form input {
+  margin-bottom: 60px;
+  width: 300px;
+}
+.contect_section form select {
+  margin-bottom: 60px;
+}
+.contect_section form textarea {
+  width: 90%;
+  transition-duration: 1s;
+}
+.contect_section form textarea:focus {
+  height: 200px;
+  background-color: rgba(233, 233, 233, 0.637);
+}
+
+.contect_section button {
+  cursor: pointer;
+  padding: 7px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: #6958ca;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 4px 6px rgba(41, 38, 38, 0.507);
+  margin: 40px 0px 0px;
+}
+
+@media screen and (max-width: 1050px) {
+  .contect_section {
+    margin: 70px auto;
+    width: 90%;
+    height: 100%;
+
+    /* border: 1px solid black; */
+    padding: 40px 0px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(41, 38, 38, 0.507);
+  }
+  .contect_section form {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+  }
+  .contect_section form input {
+    margin-bottom: 60px;
+    width: 300px;
+  }
+  .contect_section form select {
+    margin-bottom: 60px;
+  }
+  .contect_section form textarea {
+    width: 95%;
+    transition-duration: 1s;
+  }
+  .contect_section form textarea:focus {
+    height: 200px;
+    background-color: rgba(233, 233, 233, 0.637);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contect_section {
+    margin: 70px auto;
+    width: 90%;
+    padding: 40px 0px;
+  }
+  .contect_section h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0px 0px 40px;
+  }
+  .contect_section form {
+    width: 100%;
+    padding: 40px 10px;
+  }
+  .contect_section form input,
+  .contect_section form select,
+  .contect_section form textarea {
+    font-size: 18px;
+    margin: 20px;
+    padding: 3px 10px;
+  }
+  .contect_section form input {
+    margin-bottom: 30px;
+    width: 90%;
+  }
+  .contect_section form select {
+    margin-bottom: 30px;
+    width: 90%;
+  }
+  .contect_section form textarea {
+    width: 95%;
+  }
+}
